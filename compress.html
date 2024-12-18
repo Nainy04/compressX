@@ -25,17 +25,19 @@
         <h1>Online File Compressor</h1>
         <p>Compress <strong>Word, JPEG</strong> and <strong>PNG</strong> files</p>
 
-        <div class="file-upload" onclick="document.getElementById('file-input').click();">
+        <div class="file-upload">
             <i>📄</i> 
-            <p>Choose or drop file<br><small>Max. 50 MB</small></p>
+            <p>Choose or drop file<br></p>
+            <br>
+            <br>
+            <form action="/submit">
+                <input type="file" name="file" id="file">
+            </form>
         </div>
 
-        <input type="file" id="file-input" />
-        <div id="error-message" class="error"></div>
         
     </div>
 
-    <!-- <script src="compress.js"></script> -->
 
 </body>
 </html>
