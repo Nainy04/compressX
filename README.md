@@ -25,7 +25,7 @@ CompressX is a web-based application designed to provide compression services us
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/compressX.git
+   git clone https://github.com/Nainy04/compressX.git
    cd compressX
    ```
 
