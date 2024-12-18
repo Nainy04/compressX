@@ -23,13 +23,14 @@ def home():
 def upload():
     if 'file' not in request.files:
         return 'No file part'
-    
+    file_allowed =['png','jpeg','txt']
     file = request.files['file']
     if file.filename == '':
         return 'No selected file'
     
     if file:
         filename = secure_filename(file.filename)
+        extention = filename.split
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(filepath)
 
